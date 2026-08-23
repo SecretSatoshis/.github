@@ -31,9 +31,9 @@ Open data and original analysis, built in the open. Every chart, dashboard and r
 
 Data releases carry a manifest recording the release ID, retrieval time, coverage and a SHA-256 checksum for every input. Sources and their limitations are documented per repository in `DATA_SOURCES.md`, and pipelines validate their inputs before producing anything.
 
-Analysis is written by [Trey Brunson](https://www.treybrunson.com/), drawing on a decade inside Bitcoin markets.
-
 Everything here is research, not investment advice. Repositories are [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+Analysis is written by [Trey Brunson](https://www.treybrunson.com/).
 
 ---
 
