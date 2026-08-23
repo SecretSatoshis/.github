@@ -24,8 +24,8 @@ Open data and original analysis, built in the open. Every chart, dashboard and r
 | **[Bitcoin-Chart-Library](https://github.com/SecretSatoshis/Bitcoin-Chart-Library)** | Builds and publishes the interactive charts |
 | **[Bitcoin-Investment-Strategy](https://github.com/SecretSatoshis/Bitcoin-Investment-Strategy)** | A Bitcoin savings-plan notebook, companion to *Should I buy bitcoin?* |
 | **[Bitcoin-Agent-21](https://github.com/SecretSatoshis/Bitcoin-Agent-21)** | The knowledge base and source documents behind Agent 21 |
-| **[Secret-Satoshis-Website](https://github.com/SecretSatoshis/Secret-Satoshis-Website)** | secretsatoshis.com |
-| **[Trey-Brunson-Website](https://github.com/SecretSatoshis/Trey-Brunson-Website)** | treybrunson.com |
+| **[Secret-Satoshis-Website](https://github.com/SecretSatoshis/Secret-Satoshis-Website)** | Landing page for secretsatoshis.com |
+| **[Trey-Brunson-Website](https://github.com/SecretSatoshis/Trey-Brunson-Website)** | Landing page for treybrunson.com |
 
 ## How to check the work
 
