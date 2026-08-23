@@ -33,7 +33,7 @@ Data releases carry a manifest recording the release ID, retrieval time, coverag
 
 Everything here is research, not investment advice. Repositories are [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-Analysis is written by [Trey Brunson](https://www.treybrunson.com/).
+Created by [Trey Brunson](https://www.treybrunson.com/).
 
 ---
 
