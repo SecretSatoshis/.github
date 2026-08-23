@@ -1,5 +1,7 @@
 # Secret Satoshis
 
+`// AI-Native Bitcoin Market Intelligence`
+
 **Bitcoin intelligence you can verify.**
 
 Open data and original analysis, built in the open. Every chart, dashboard and report Secret Satoshis publishes is produced by a pipeline in one of these repositories — the same data, the same code, available to inspect, reproduce or reuse.
