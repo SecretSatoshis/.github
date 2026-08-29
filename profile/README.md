@@ -34,7 +34,7 @@ Data releases carry a manifest recording the release ID, retrieval time, coverag
 Everything here is research, not investment advice. Public code and original repository
 content are released under GPL-3.0; each project's `LICENSE` controls its scope.
 
-Created by [Trey Brunson](https://www.treybrunson.com/).
+Created by [Trey Brunson](https://treybrunson.com/).
 
 ---
 
