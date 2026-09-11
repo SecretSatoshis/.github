@@ -4,7 +4,7 @@
 
 **Bitcoin intelligence you can verify.**
 
-Open data and original analysis, built in the open. Every chart, dashboard and report Secret Satoshis publishes is produced by a pipeline in one of these repositories — the same data, the same code, available to inspect, reproduce or reuse.
+Open data and original analysis, built in the open. These repositories share the data and code behind Secret Satoshis charts, dashboards and selected research — available to inspect, reproduce or reuse.
 
 ## Where the work is published
 
@@ -20,7 +20,7 @@ Open data and original analysis, built in the open. Every chart, dashboard and r
 
 | Repository | What it does |
 |---|---|
-| **[Bitcoin-Report-Library](https://github.com/SecretSatoshis/Bitcoin-Report-Library)** | The daily data pipeline. Publishes the CSV release every other surface reads, and hosts the Market Dashboard |
+| **[Bitcoin-Report-Library](https://github.com/SecretSatoshis/Bitcoin-Report-Library)** | The daily data pipeline. Publishes the daily CSV release used across the platform, and hosts the Market Dashboard |
 | **[Bitcoin-Chart-Library](https://github.com/SecretSatoshis/Bitcoin-Chart-Library)** | Builds and publishes the interactive charts |
 | **[Bitcoin-Investment-Strategy](https://github.com/SecretSatoshis/Bitcoin-Investment-Strategy)** | A Bitcoin savings-plan notebook, companion to [*Should I buy bitcoin?*](https://newsletter.secretsatoshis.com/p/should-i-buy-bitcoin) |
 | **[Bitcoin-Agent-21](https://github.com/SecretSatoshis/Bitcoin-Agent-21)** | The knowledge base and source documents behind Agent 21 |
