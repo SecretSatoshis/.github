@@ -12,7 +12,7 @@ Open data and original analysis, built in the open. These repositories share the
 |---|---|
 | **[secretsatoshis.com](https://secretsatoshis.com/)** | The platform, and where everything starts |
 | **[Market Dashboard](https://dashboard.secretsatoshis.com/)** | Current Bitcoin market conditions, updated daily |
-| **[Chart Library](https://charts.secretsatoshis.com/)** | 59 interactive charts across price, on-chain data, mining and adoption |
+| **[Chart Library](https://charts.secretsatoshis.com/)** | 50 interactive charts across price, on-chain data, mining and adoption |
 | **[Newsletter](https://newsletter.secretsatoshis.com/)** | Bitcoin news, market analysis, and outlook updates |
 | **[Agent 21](https://chatgpt.com/g/g-BZXtVdU6M-agent-21)** | Explore Bitcoin research and data through conversation |
 
