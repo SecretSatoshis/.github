@@ -1,36 +1,55 @@
 # Secret Satoshis
 
-`// AI-Native Bitcoin Market Intelligence`
-
 **Bitcoin intelligence you can verify.**
 
-Open data and original analysis, built in the open. These repositories share the data and code behind Secret Satoshis charts, dashboards and selected research — available to inspect, reproduce or reuse.
+Bitcoin market analysis and open data, built on more than a decade inside Bitcoin markets.
+These repositories hold the data and code behind the Secret Satoshis dashboard, charts and
+research, so anyone can inspect, rerun or reuse them.
+
+- **Start here:** [secretsatoshis.com](https://secretsatoshis.com/)
+- **Read the newsletter:** [newsletter.secretsatoshis.com](https://newsletter.secretsatoshis.com/)
 
 ## Where the work is published
 
-| | |
-|---|---|
-| **[secretsatoshis.com](https://secretsatoshis.com/)** | The platform, and where everything starts |
-| **[Market Dashboard](https://dashboard.secretsatoshis.com/)** | Current Bitcoin market conditions, updated daily |
-| **[Chart Library](https://charts.secretsatoshis.com/)** | 50 interactive charts across price, on-chain data, mining and adoption |
-| **[Newsletter](https://newsletter.secretsatoshis.com/)** | Bitcoin news, market analysis, and outlook updates |
-| **[Agent 21](https://chatgpt.com/g/g-BZXtVdU6M-agent-21)** | Explore Bitcoin research and data through conversation |
+| Site | What's there |
+|------|--------------|
+| **[secretsatoshis.com](https://secretsatoshis.com/)** | The platform, and the year's Bitcoin price outlook tracked against the latest close |
+| **[Market Dashboard](https://dashboard.secretsatoshis.com/)** | Current Bitcoin market data, valuation models, on-chain conditions and cycle context, updated daily |
+| **[Chart Library](https://charts.secretsatoshis.com/)** | 46 interactive charts covering price, on-chain activity, supply, mining and valuation |
+| **[Newsletter](https://newsletter.secretsatoshis.com/)** | Weekly recaps, quarterly strategy reviews and the annual Bitcoin price outlook |
+| **[Agent 21](https://chatgpt.com/g/g-BZXtVdU6M-agent-21)** | An AI agent for exploring Secret Satoshis research and live Bitcoin data |
+
+## How it fits together
+
+```mermaid
+flowchart LR
+    S["Market, on-chain,<br/>macro & ETF data"] --> R[("Report Library<br/>daily release")]
+    R --> D["Market Dashboard"]
+    R --> C["Chart Library"]
+    R --> I["Investment Strategy<br/>notebooks"]
+    R --> W["secretsatoshis.com<br/>outlook tracker"]
+```
+
+Everything starts from one daily data release. The Report Library collects the data, checks
+it, and publishes it with a manifest that records the report date and each file's SHA-256
+hash. The dashboard, charts, notebooks and homepage tracker all read that same release, so
+their numbers agree, and anyone can check them against the
+[manifest](https://secretsatoshis.github.io/Bitcoin-Report-Library/csv/release_manifest.json).
 
 ## Public repositories
 
 | Repository | What it does |
-|---|---|
-| **[Bitcoin-Report-Library](https://github.com/SecretSatoshis/Bitcoin-Report-Library)** | The daily data pipeline. Publishes the daily CSV release used across the platform, and hosts the Market Dashboard |
-| **[Bitcoin-Chart-Library](https://github.com/SecretSatoshis/Bitcoin-Chart-Library)** | Builds and publishes the interactive charts |
-| **[Bitcoin-Investment-Strategy](https://github.com/SecretSatoshis/Bitcoin-Investment-Strategy)** | A Bitcoin savings-plan notebook, companion to [*Should I buy bitcoin?*](https://newsletter.secretsatoshis.com/p/should-i-buy-bitcoin) |
-| **[Bitcoin-Agent-21](https://github.com/SecretSatoshis/Bitcoin-Agent-21)** | The knowledge base and source documents behind Agent 21 |
-| **[Secret-Satoshis-Website](https://github.com/SecretSatoshis/Secret-Satoshis-Website)** | Landing page for secretsatoshis.com |
-| **[Trey-Brunson-Website](https://github.com/SecretSatoshis/Trey-Brunson-Website)** | Landing page for treybrunson.com |
+|------------|--------------|
+| **[Bitcoin-Report-Library](https://github.com/SecretSatoshis/Bitcoin-Report-Library)** | Collects and checks the data, publishes the daily release, and hosts the Market Dashboard |
+| **[Bitcoin-Chart-Library](https://github.com/SecretSatoshis/Bitcoin-Chart-Library)** | Chart definitions, and the site that builds them from the release |
+| **[Bitcoin-Investment-Strategy](https://github.com/SecretSatoshis/Bitcoin-Investment-Strategy)** | A savings plan run against real price history, companion to [*Should I buy bitcoin?*](https://newsletter.secretsatoshis.com/p/should-i-buy-bitcoin), and two studies of Bitcoin's supply and demand |
+| **[Secret-Satoshis-Website](https://github.com/SecretSatoshis/Secret-Satoshis-Website)** | The secretsatoshis.com home page and its outlook tracker |
+| **[Trey-Brunson-Website](https://github.com/SecretSatoshis/Trey-Brunson-Website)** | Trey Brunson's personal site, treybrunson.com |
 
-## How to check the work
+## License
 
-Everything here is research, not investment advice. Public code and original repository
-content are released under GPL-3.0; each project's `LICENSE` controls its scope.
+Research, not investment advice. Code and original content are released under GPL-3.0;
+each repository's `LICENSE` sets its scope, and third-party data keeps its publishers' terms.
 
 Created by [Trey Brunson](https://treybrunson.com/).
 
