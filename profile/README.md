@@ -15,7 +15,7 @@ research, so anyone can inspect, rerun or reuse them.
 |------|--------------|
 | **[secretsatoshis.com](https://secretsatoshis.com/)** | The platform, and the year's Bitcoin price outlook tracked against the latest close |
 | **[Market Dashboard](https://dashboard.secretsatoshis.com/)** | Current Bitcoin market data, valuation models, on-chain conditions and cycle context, updated daily |
-| **[Chart Library](https://charts.secretsatoshis.com/)** | 46 interactive charts covering price, on-chain activity, supply, mining and valuation |
+| **[Chart Library](https://charts.secretsatoshis.com/)** | 54 interactive charts covering price, ETF flows, on-chain activity, supply, mining and valuation |
 | **[Newsletter](https://newsletter.secretsatoshis.com/)** | Weekly recaps, quarterly strategy reviews and the annual Bitcoin price outlook |
 | **[Agent 21](https://chatgpt.com/g/g-BZXtVdU6M-agent-21)** | An AI agent for exploring Secret Satoshis research and live Bitcoin data |
 
