@@ -13,11 +13,11 @@ research, so anyone can inspect, rerun or reuse them.
 
 | Site | What's there |
 |------|--------------|
-| **[secretsatoshis.com](https://secretsatoshis.com/)** | The platform, and the year's Bitcoin price outlook tracked against the latest close |
+| **[secretsatoshis.com](https://secretsatoshis.com/)** | The newsletter's home, and the year's Bitcoin price outlook tracked against today's price |
 | **[Market Dashboard](https://dashboard.secretsatoshis.com/)** | Current Bitcoin market data, valuation models, on-chain conditions and cycle context, updated daily |
 | **[Chart Library](https://charts.secretsatoshis.com/)** | 54 interactive charts covering price, ETF flows, on-chain activity, supply, mining and valuation |
 | **[Newsletter](https://newsletter.secretsatoshis.com/)** | Weekly recaps, quarterly strategy reviews and the annual Bitcoin price outlook |
-| **[Agent 21](https://chatgpt.com/g/g-BZXtVdU6M-agent-21)** | An AI agent for exploring Secret Satoshis research and live Bitcoin data |
+| **[Agent 21](https://agent21.secretsatoshis.com/)** | The Bitcoin-native AI agent built by Secret Satoshis, invite-only during beta |
 
 ## How it fits together
 
@@ -43,7 +43,7 @@ their numbers agree, and anyone can check them against the
 | **[Bitcoin-Report-Library](https://github.com/SecretSatoshis/Bitcoin-Report-Library)** | Collects and checks the data, publishes the daily release, and hosts the Market Dashboard |
 | **[Bitcoin-Chart-Library](https://github.com/SecretSatoshis/Bitcoin-Chart-Library)** | Chart definitions, and the site that builds them from the release |
 | **[Bitcoin-Investment-Strategy](https://github.com/SecretSatoshis/Bitcoin-Investment-Strategy)** | A savings plan run against real price history, companion to [*Should I buy bitcoin?*](https://newsletter.secretsatoshis.com/p/should-i-buy-bitcoin), and two studies of Bitcoin's supply and demand |
-| **[Secret-Satoshis-Website](https://github.com/SecretSatoshis/Secret-Satoshis-Website)** | The secretsatoshis.com home page and its outlook tracker |
+| **[Secret-Satoshis-Website](https://github.com/SecretSatoshis/Secret-Satoshis-Website)** | The secretsatoshis.com home page and its outlook tracker, and the Agent 21 site |
 | **[Trey-Brunson-Website](https://github.com/SecretSatoshis/Trey-Brunson-Website)** | Trey Brunson's personal site, treybrunson.com |
 
 ## License
