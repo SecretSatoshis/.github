@@ -41,7 +41,6 @@ notebooks use that release, and anyone can check the published files against the
 | **[Bitcoin-Report-Library](https://github.com/SecretSatoshis/Bitcoin-Report-Library)** | Collects and checks the data, publishes the daily release, and hosts the Market Dashboard |
 | **[Bitcoin-Chart-Library](https://github.com/SecretSatoshis/Bitcoin-Chart-Library)** | Chart definitions, and the site that builds them from the release |
 | **[Bitcoin-Investment-Strategy](https://github.com/SecretSatoshis/Bitcoin-Investment-Strategy)** | A savings plan run against real price history, companion to [*Should I buy bitcoin?*](https://newsletter.secretsatoshis.com/p/should-i-buy-bitcoin), and two studies of Bitcoin's supply and demand |
-| **[Secret-Satoshis-Website](https://github.com/SecretSatoshis/Secret-Satoshis-Website)** | The Secret Satoshis homepage and the Agent 21 site |
 | **[Trey-Brunson-Website](https://github.com/SecretSatoshis/Trey-Brunson-Website)** | Trey Brunson's personal site, treybrunson.com |
 
 ## License
