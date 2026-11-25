@@ -16,7 +16,7 @@ inputs:
   package-json-file:
     description: Path to package.json for reading packageManager when running in a subdirectory.
     required: false
-    default: ''
+    default: 'package.json'
   cache:
     description: Enable pnpm cache in actions/setup-node ('true' or 'false').
     required: false
