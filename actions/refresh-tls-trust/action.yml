@@ -1,0 +1,39 @@
+name: Refresh TLS certificate trust
+description: Upgrade ca-certificates, enforce emergency root CA distrust rules on Ubuntu runners, and export SSL_CERT_FILE and NODE_OPTIONS.
+inputs:
+  configure-node:
+    description: Export SSL_CERT_FILE and append --use-openssl-ca to NODE_OPTIONS in GITHUB_ENV.
+    required: false
+    default: 'true'
+runs:
+  using: composite
+  steps:
+    - name: Refresh TLS certificate trust
+      shell: bash
+      working-directory: ${{ runner.temp }}
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install --only-upgrade -y ca-certificates
+        # Enforce the emergency distrust even if this runner's apt mirror lags.
+        sudo sed -i \
+          -e 's|^mozilla/emSign_ECC_Root_CA_-_G3.crt$|!&|' \
+          -e 's|^mozilla/emSign_Root_TLS_CA_-_G3.crt$|!&|' \
+          -e 's|^mozilla/Comodo_AAA_Services_root.crt$|!&|' \
+          /etc/ca-certificates.conf
+        sudo update-ca-certificates
+
+    - name: Configure TLS environment variables
+      if: inputs.configure-node == 'true'
+      shell: bash
+      run: |
+        echo "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt" >> "$GITHUB_ENV"
+        case " ${NODE_OPTIONS:-} " in
+          *" --use-openssl-ca "*) ;;
+          *)
+            if [ -n "${NODE_OPTIONS:-}" ]; then
+              echo "NODE_OPTIONS=${NODE_OPTIONS} --use-openssl-ca" >> "$GITHUB_ENV"
+            else
+              echo "NODE_OPTIONS=--use-openssl-ca" >> "$GITHUB_ENV"
+            fi
+            ;;
+        esac

@@ -1,0 +1,33 @@
+name: Set up Python and uv
+description: Install pinned Python and uv with optional dependency caching.
+inputs:
+  python-version:
+    description: Python version to install via actions/setup-python.
+    required: false
+    default: '3.12'
+  uv-version:
+    description: Pinned uv version to install via astral-sh/setup-uv.
+    required: false
+    default: '0.13.4'
+  enable-cache:
+    description: Whether to enable uv cache restoration and persistence.
+    required: false
+    default: 'true'
+  cache-dependency-glob:
+    description: Glob pattern for uv cache key invalidation.
+    required: false
+    default: '**/uv.lock'
+runs:
+  using: composite
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Set up uv
+      uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+      with:
+        version: ${{ inputs.uv-version }}
+        enable-cache: ${{ inputs.enable-cache }}
+        cache-dependency-glob: ${{ inputs.cache-dependency-glob }}

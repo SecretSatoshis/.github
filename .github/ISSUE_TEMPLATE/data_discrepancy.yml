@@ -1,0 +1,46 @@
+name: Data or chart discrepancy
+description: Report a metric, calculation, ETF flow, or chart reading that looks inaccurate or stale
+labels: ["data-discrepancy"]
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where did you see the discrepancy?
+      options:
+        - Market Dashboard (dashboard.secretsatoshis.com)
+        - Chart Library (charts.secretsatoshis.com)
+        - Report Library CSV / release_manifest.json
+        - Investment Strategy notebooks
+        - Secret Satoshis Newsletter / Homepage
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL, chart name, or CSV file
+      placeholder: e.g. https://charts.secretsatoshis.com/charts/Bitcoin_MVRV.html
+    validations:
+      required: true
+  - type: input
+    id: report-date
+    attributes:
+      label: Report date / data timestamp
+      description: Date shown on the page, chart, or release_manifest.json.
+      placeholder: e.g. 2026-11-24
+    validations:
+      required: true
+  - type: textarea
+    id: observed-vs-expected
+    attributes:
+      label: Observed value vs. expected value
+      description: Describe what is currently displayed and what you believe it should be.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Primary reference or calculation
+      description: Link to a primary source (e.g. BRK, Bitcoin Core, SEC filing, issuer holdings page) or show the math.
+    validations:
+      required: true

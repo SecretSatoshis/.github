@@ -1,0 +1,51 @@
+name: Set up Node.js and pnpm
+description: Install pinned pnpm and Node.js with optional pnpm store caching.
+inputs:
+  node-version:
+    description: Explicit Node.js version (takes precedence over node-version-file if set).
+    required: false
+    default: ''
+  node-version-file:
+    description: Path to a Node.js version file such as .nvmrc (used when node-version is empty).
+    required: false
+    default: '.nvmrc'
+  pnpm-version:
+    description: Explicit pnpm version (optional when packageManager is set in package.json).
+    required: false
+    default: ''
+  package-json-file:
+    description: Path to package.json for reading packageManager when running in a subdirectory.
+    required: false
+    default: ''
+  cache:
+    description: Enable pnpm cache in actions/setup-node ('true' or 'false').
+    required: false
+    default: 'true'
+  cache-dependency-path:
+    description: Path to pnpm-lock.yaml when running in a subdirectory.
+    required: false
+    default: ''
+runs:
+  using: composite
+  steps:
+    - name: Set up pnpm
+      uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+      with:
+        version: ${{ inputs.pnpm-version }}
+        package_json_file: ${{ inputs.package-json-file }}
+
+    - name: Set up Node.js (explicit version)
+      if: inputs.node-version != ''
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: ${{ inputs.cache == 'true' && 'pnpm' || '' }}
+        cache-dependency-path: ${{ inputs.cache-dependency-path }}
+
+    - name: Set up Node.js (version file)
+      if: inputs.node-version == ''
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version-file: ${{ inputs.node-version-file }}
+        cache: ${{ inputs.cache == 'true' && 'pnpm' || '' }}
+        cache-dependency-path: ${{ inputs.cache-dependency-path }}

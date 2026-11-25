@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Secret Satoshis
+    url: https://secretsatoshis.com/
+    about: Overview of the Secret Satoshis newsletter, Agent 21, and research tools
+  - name: Market Dashboard
+    url: https://dashboard.secretsatoshis.com/
+    about: Daily Bitcoin market data, valuation models, on-chain conditions, and cycle context
+  - name: Chart Library
+    url: https://charts.secretsatoshis.com/
+    about: Interactive Bitcoin charts covering price, ETF flows, supply, mining, and valuation
+  - name: Security Vulnerability Disclosure
+    url: https://github.com/SecretSatoshis/.github/blob/main/SECURITY.md
+    about: Please report security issues privately via the affected repository's Security tab
